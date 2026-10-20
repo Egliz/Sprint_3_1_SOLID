@@ -6,7 +6,9 @@ public class User {
 
 
     public User(String name, String email, String password) {
-        //TODO AQUI PONER EL BASICVALIDATOR
+        BasicValidator.stringValidator(name);
+        BasicValidator.stringValidator(email);
+        BasicValidator.stringValidator(password);
         this.name = name;
         this.email = email;
         this.password = password;
@@ -28,7 +30,7 @@ public class User {
         return password;
     }
 
-    public boolean getIsConfirmed(){
+    public boolean isConfirmed(){
         return isConfirmed;
     }
 

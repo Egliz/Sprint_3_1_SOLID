@@ -1,16 +1,11 @@
 public class Registration {
 
-    public static boolean register(User user){
+    public static void registerUser(User user){
 
             Email.emailValidator(user.getEmail());
             Password.passwordValidator(user.getPassword());
 
             PrintMessages.confirmationEmail(user.getEmail());
 
-            if(!user.getIsConfirmed()){
-
-            }
-        }
-
-
+    }
 }
