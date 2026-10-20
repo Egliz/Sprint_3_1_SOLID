@@ -8,6 +8,7 @@ public class User {
 
     //TODO Validar que los datos recibidos son correctos(no nuolo, no vacio), puede ser CLASE QUE VALIDE DATOS
     public User(String name, String email, String password) {
+       //llamar a stringValidator con name, email y password
         this.name = name;
         this.email = email;
         this.password = password;
