@@ -20,6 +20,7 @@ public class User {
         if (email == null || !email.contains("@") || !email.contains(".")) {
             throw new IllegalArgumentException("Invalid email address.");
         }
+        //llamar a emailValidator
 
         //TODO CLASE password, llama a la clase con el metodo que valida datos, metodo que password sea correcto, xon estas condicones:, return boolena
         if (password == null || password.length() < 8 || !password.matches(".*[A-Z].*")) {
