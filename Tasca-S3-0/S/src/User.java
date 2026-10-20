@@ -1,48 +1,21 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class User {
     private final String name;
-    private String email;
-    private String password;
+    private final String email;
+    private final String password;
+    private boolean isConfirmed = false;
 
-    //TODO Validar que los datos recibidos son correctos(no nuolo, no vacio), puede ser CLASE QUE VALIDE DATOS
+
     public User(String name, String email, String password) {
-       //llamar a stringValidator con name, email y password
-
-        BasicValidator.stringValidator(name);
-        BasicValidator.stringValidator(email);
-        BasicValidator.stringValidator(password);
+        //TODO AQUI PONER EL BASICVALIDATOR
         this.name = name;
         this.email = email;
         this.password = password;
     }
 
-    public void register() {
-
-        Email.emailValidator(email);
-        //llamar a emailValidator
-
-        //TODO CLASE password, llama a la clase con el metodo que valida datos, metodo que password sea correcto, xon estas condicones:, return boolena
-        if (password == null || password.length() < 8 || !password.matches(".*[A-Z].*")) {
-            throw new IllegalArgumentException("Password must be at least 8 characters long and contain an uppercase letter.");
-        }
-
-        //TODO clase que tiene metodos que imprimen mensajes, clase solo para los print
-        System.out.println("📧 Sending confirmation email to: " + email);
-
-        //TODO hacer un metodo para esto en USER, sacarlo de register,  un true magico???, no ponerlo en el main porque es lo mismo, en cualquier momento el mnetodo s e puede cambiar
-        boolean userConfirmed = true;
-
-        //TODO este print viene de la clase mensaje
-        if (!userConfirmed) {
-            System.out.println("⚠️ User did not confirm registration.");
-            return;
-        }
+    public void confirmedUser(){
+        this.isConfirmed = true;
     }
 
-    //TODO creo que los getters no son necesarios(????)
-    // Getters
     public String getName() {
         return name;
     }
@@ -55,4 +28,16 @@ public class User {
         return password;
     }
 
+    public boolean getIsConfirmed(){
+        return isConfirmed;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
