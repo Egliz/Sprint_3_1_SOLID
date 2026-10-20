@@ -20,10 +20,7 @@ public class User {
 
     public void register() {
 
-        //TODO CLASE EMAIL, llama a la clase metodo que valida los datos, metodo que el mail sea correcto: con estas condiciones:
-        if (email == null || !email.contains("@") || !email.contains(".")) {
-            throw new IllegalArgumentException("Invalid email address.");
-        }
+        Email.emailValidator(email);
         //llamar a emailValidator
 
         //TODO CLASE password, llama a la clase con el metodo que valida datos, metodo que password sea correcto, xon estas condicones:, return boolena
