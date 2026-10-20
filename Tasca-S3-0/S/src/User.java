@@ -30,7 +30,7 @@ public class User {
         return password;
     }
 
-    public boolean isConfirmed(){
+    public boolean getIsConfirmed(){
         return isConfirmed;
     }
 
