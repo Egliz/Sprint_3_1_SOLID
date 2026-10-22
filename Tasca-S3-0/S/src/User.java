@@ -4,7 +4,6 @@ public class User {
     private final String password;
     private boolean isConfirmed = false;
 
-
     public User(String name, String email, String password) {
         BasicValidator.stringValidator(name);
         BasicValidator.stringValidator(email);
@@ -32,14 +31,5 @@ public class User {
 
     public boolean getIsConfirmed(){
         return isConfirmed;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }
