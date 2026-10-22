@@ -5,7 +5,7 @@ public class ServicePerson {
             this.saver = saver;
         }
 
-        public void savePersonaaaa(Person person){
+        public void save(Person person){
             saver.savePerson(person);
         }
 
