@@ -1,4 +1,4 @@
-public class MySql implements PersonSaver{
+public class MySQL implements PersonSaver{
 
     @Override
     public void savePerson(Person person) {
