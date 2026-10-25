@@ -1,4 +1,4 @@
-public class ViejoInstrumentPlayer {
+/*public class ViejoInstrumentPlayer {
     public void play(String instrument) {
         if ("guitar".equals(instrument)) {
             System.out.println("🎸 Strumming the guitar");
@@ -17,4 +17,4 @@ public class ViejoInstrumentPlayer {
         player.play("drums");
         player.play("piano");
     }
-}
+}*/
