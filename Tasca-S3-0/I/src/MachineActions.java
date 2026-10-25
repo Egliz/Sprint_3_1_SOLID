@@ -1,7 +1,3 @@
-public interface MachineActions {
-    void turnOn();
-    void turnOff();
-    void heat();
-    void cool();
+public interface WashAction {
     void wash();
 }
