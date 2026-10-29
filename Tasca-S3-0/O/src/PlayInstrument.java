@@ -1,3 +1,3 @@
 public interface PlayInstrument {
-    public void Play();
+    public void play();
 }

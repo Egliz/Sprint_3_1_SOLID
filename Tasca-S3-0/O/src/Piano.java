@@ -1,7 +1,7 @@
 public class Piano implements PlayInstrument{
 
     @Override
-    public void Play() {
+    public void play() {
         System.out.println("🎹 Playing the piano");
     }
 }

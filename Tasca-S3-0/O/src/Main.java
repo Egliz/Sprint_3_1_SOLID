@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Main {
     static void main(String[] args) {
 
@@ -7,8 +5,8 @@ public class Main {
         PlayInstrument drums = new Drums();
         PlayInstrument piano = new Piano();
 
-        guitar.Play();
-        drums.Play();
-        piano.Play();
+        guitar.play();
+        drums.play();
+        piano.play();
     }
 }

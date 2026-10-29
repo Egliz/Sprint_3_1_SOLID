@@ -1,7 +1,7 @@
 public class Guitar implements PlayInstrument{
 
     @Override
-    public void Play() {
+    public void play() {
         System.out.println("🎸 Strumming the guitar");
     }
 }
