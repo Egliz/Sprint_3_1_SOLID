@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
     static void main(String[] args) {
 
@@ -5,8 +7,10 @@ public class Main {
         PlayInstrument drums = new Drums();
         PlayInstrument piano = new Piano();
 
-        guitar.play();
-        drums.play();
-        piano.play();
+        Musician musician = new Musician();
+
+        musician.play(guitar);
+        musician.playAll(List.of(drums, piano));
+
     }
 }

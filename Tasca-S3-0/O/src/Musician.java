@@ -16,4 +16,5 @@ public class Musician {
     //si quieisera crear otro instrumento, esta clse no se toca
     //A esta clase se le puede pasar una lista de intrumentos y tocarlos todos
     //Testear el concepto
+    //LLamar a esto en el main
 }
